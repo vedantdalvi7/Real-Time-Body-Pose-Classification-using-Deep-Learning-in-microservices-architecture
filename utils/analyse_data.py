@@ -32,13 +32,15 @@ COLUMNS = ['Timestamp', 'Pelvis_extension', 'Pelvis_lateral_flexion_rotation',
 
 #body_joint = df.LeftKnee_flexion
 
-print("Contents in csv file:", df)
+#print("Contents in csv file:", df)
 #print(df.columns)
-plt.plot(df.RightKnee_flexion, label = "Left_Knee")
-#plt.plot(df.RightKnee_flexion, label="Right_Knee")
+plt.plot(df.LeftShoulder_flexion, label = "Left_Elbow")
+plt.plot(df.RightShoulder_flexion, label ="Right_Elbow")
+plt.plot(df.LeftKnee_flexion, label = "LeftKnee_flexion")
+plt.plot(df.RightKnee_flexion, label = "RightKnee_flexion")
 plt.title(f"{filename}:joint angles")
 plt.xlabel("Time")
 plt.ylabel("Degrees")
 plt.grid(True)
-plt.show()
 plt.legend()
+plt.show()
