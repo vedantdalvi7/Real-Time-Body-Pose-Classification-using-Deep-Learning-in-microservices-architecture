@@ -30,8 +30,6 @@ COLUMNS = ['Timestamp', 'Pelvis_extension', 'Pelvis_lateral_flexion_rotation',
        'RightElbow_flexion', 'RightElbow_abduction', 'RightElbow_pronation',
        'RightWrist_flexion', 'RightWrist_abduction', 'RightWrist_pronation']
 
-#body_joint = df.LeftKnee_flexion
-
 #print("Contents in csv file:", df)
 #print(df.columns)
 plt.plot(df.LeftShoulder_flexion, label = "Left_Elbow")
